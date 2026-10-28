@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the Bakerz Bite gallery - wedding cakes, birthday cakes, pastries, cookies, cupcakes, pies, desserts and our cafe." />
+  <meta name="author" content="Bakerz Bite" />
+  <meta name="theme-color" content="#FBF4E8" />
+  <title>Bakery Gallery | Bakerz Bite</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/bakerz-bite-favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>html,body{background:#FBF4E8;color-scheme:light}</style>
+  <link rel="stylesheet" href="css/style.css?v=27" />
+  <noscript><style>.bb-preloader { display: none !important; }</style></noscript>
+</head>
+<body data-page="gallery" id="top">
+
+<div class="bb-preloader" id="bbPreloader" role="status" aria-label="Loading">
+    <div class="bb-preloader-box">
+      <span class="bb-preloader-emblem">
+        <img src="assets/logo/bakerz-bite-badge.png" alt="Bakerz Bite Bakery Badge logo" width="72" height="72" class="bb-preloader-logo" />
+      </span>
+      <span class="bb-preloader-text">Bakerz&nbsp;Bite</span>
+      <span class="bb-preloader-bar" aria-hidden="true"><i></i></span>
+    </div>
+  </div>
+
+  <div class="bb-bg-anim" aria-hidden="true">
+    <div class="bb-bokeh" id="bbBokeh"></div>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="announcement-bar" id="announcementBar" role="region" aria-label="Promotional announcements">
+    <div class="container d-flex align-items-center justify-content-between">
+      <p class="announcement-text mb-0" id="announcementText" aria-live="polite"><i class="bi bi-megaphone-fill" aria-hidden="true"></i>Freshly baked every morning - visit us today!</p>
+      <button class="announcement-close" id="announcementClose" type="button" aria-label="Dismiss announcement"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+  <header id="siteHeader">
+    <nav class="navbar navbar-expand-xl bb-navbar" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="assets/logo/bakerz-bite-badge.png" alt="Bakerz Bite Bakery Badge logo" height="52" class="brand-logo" />
+          <span class="brand-name">Bakerz Bite<span class="brand-tag">Bakery &amp; Caf&eacute;</span></span>
+        </a>
+
+        <a class="btn bb-cart-btn order-xl-3 ms-auto ms-xl-0" href="cart.html" aria-label="View shopping cart">
+          <i class="bi bi-bag-heart-fill" aria-hidden="true"></i>
+          <span class="d-none d-sm-inline">Cart</span>
+          <span class="cart-badge" id="cartCountBadge" aria-live="polite">0</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown bb-cat-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu bb-dropdown-menu" aria-labelledby="catDropdown">
+                <li><a class="dropdown-item nav-link" href="cakes.html"><i class="bi bi-cake2" aria-hidden="true"></i> Cakes</a></li>
+                <li><a class="dropdown-item nav-link" href="pastries.html"><i class="bi bi-cookie" aria-hidden="true"></i> Pastries</a></li>
+                <li><a class="dropdown-item nav-link" href="cookies.html"><i class="bi bi-circle" aria-hidden="true"></i> Cookies</a></li>
+                <li><a class="dropdown-item nav-link" href="pies.html"><i class="bi bi-pie-chart" aria-hidden="true"></i> Pies</a></li>
+                <li><a class="dropdown-item nav-link" href="desserts.html"><i class="bi bi-cup-hot" aria-hidden="true"></i> Desserts</a></li>
+                <li><a class="dropdown-item nav-link" href="cupcakes.html"><i class="bi bi-stars" aria-hidden="true"></i> Cupcakes</a></li>
+                <li><a class="dropdown-item nav-link" href="breads.html"><i class="bi bi-basket" aria-hidden="true"></i> Breads</a></li>
+                <li><a class="dropdown-item nav-link" href="beverages.html"><i class="bi bi-cup-straw" aria-hidden="true"></i> Beverages</a></li>
+                <li><a class="dropdown-item nav-link" href="seasonal.html"><i class="bi bi-snow" aria-hidden="true"></i> Seasonal Specials</a></li>
+                <li><a class="dropdown-item nav-link" href="merchandise.html"><i class="bi bi-bag-heart" aria-hidden="true"></i> Merchandise</a></li>
+                <li><a class="dropdown-item nav-link" href="donuts.html"><i class="bi bi-record-circle" aria-hidden="true"></i> Donuts</a></li>
+                <li><a class="dropdown-item nav-link" href="savoury.html"><i class="bi bi-egg-fried" aria-hidden="true"></i> Savoury</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Full Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown bb-cat-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="feedbackDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Feedback &amp; FAQ</a>
+              <ul class="dropdown-menu bb-dropdown-menu" aria-labelledby="feedbackDropdown">
+                <li><a class="dropdown-item nav-link" href="feedback.html">Feedback</a></li>
+                <li><a class="dropdown-item nav-link" href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner" style="background: linear-gradient(120deg, rgba(255, 251, 244, .92) 0%, rgba(246, 234, 214, .84) 100%), url('assets/images/site/07.jpg') center / cover no-repeat, var(--surface-2);">
+      <video class="banner-video" autoplay muted loop playsinline preload="auto" poster="assets/images/site/07.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="banner-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <p class="section-eyebrow">A Feast For The Eyes</p>
+        <h1 class="page-title">Bakery Gallery</h1>
+        <p class="page-sub">A look at our cakes, pastries, cafe and craft. Filter and click any image to view larger.</p>
+        <nav class="bb-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="crumb-sep">/</span><span>Gallery</span>
+        </nav>
+      </div>
+    </section>
+    <section class="section-pad">
+      <div class="container">
+        <div class="gallery-filters text-center mb-4 reveal" id="galleryFilters">
+          <button class="btn bb-filter-btn active" data-gallery="all" type="button">All</button>
+          <button class="btn bb-filter-btn" data-gallery="wedding" type="button">Wedding Cakes</button>
+          <button class="btn bb-filter-btn" data-gallery="birthday" type="button">Birthday Cakes</button>
+          <button class="btn bb-filter-btn" data-gallery="chocolate" type="button">Chocolate</button>
+          <button class="btn bb-filter-btn" data-gallery="pastries" type="button">Pastries</button>
+          <button class="btn bb-filter-btn" data-gallery="cookies" type="button">Cookies</button>
+          <button class="btn bb-filter-btn" data-gallery="cupcakes" type="button">Cupcakes</button>
+          <button class="btn bb-filter-btn" data-gallery="pies" type="button">Pies</button>
+          <button class="btn bb-filter-btn" data-gallery="desserts" type="button">Desserts</button>
+          <button class="btn bb-filter-btn" data-gallery="cafe" type="button">Cafe</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bb-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/logo/bakerz-bite-badge.png" alt="Bakerz Bite Bakery Badge logo" height="56" class="mb-3" />
+          <p class="footer-text">Bakerz Bite is a premium bakery and cafe serving freshly baked goods, gourmet cakes, artisan pastries and handcrafted beverages.</p>
+          <p class="footer-motto">&ldquo;Where Smiles Are Served Daily.&rdquo;</p>
+          <div class="footer-social">
+            <a href="contact.html" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="pastries.html">Pastries</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="pies.html">Pies</a></li>
+            <li><a href="donuts.html">Donuts</a></li>
+            <li><a href="savoury.html">Savoury Bakes</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4>Visit &amp; Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i> [Placeholder] 123 Baker Street, Lahore, Pakistan</li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+920000000000">+92 000 0000000</a></li>
+            <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><i class="bi bi-clock" aria-hidden="true"></i> Mon-Sun: 9:00 AM - 11:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <p class="mb-0">&copy; <span id="footerYear"></span> Bakerz Bite. All rights reserved. Demonstration eProject.</p>
+        <p class="mb-0">Built with HTML5, CSS3, JavaScript, jQuery &amp; Bootstrap 5.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="bb-ticker" id="bbTicker" role="status" aria-live="off" aria-label="Date, time, location and announcements">
+    <div class="ticker-track" id="tickerTrack"></div>
+    <button class="ticker-geo" id="tickerGeoToggle" type="button" title="Show my location">
+      <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+      <span id="tickerLocation">Location unavailable</span>
+    </button>
+  </div>
+
+  <div class="bb-chat" id="bbChat">
+    <button class="bb-chat-toggle" id="bbChatToggle" type="button" aria-label="Open chat assistant" aria-expanded="false" aria-controls="bbChatPanel">
+      <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+      <span class="bb-chat-badge" id="bbChatBadge" aria-hidden="true">1</span>
+    </button>
+
+    <div class="bb-chat-panel" id="bbChatPanel" role="dialog" aria-label="Bakerz Bite chat assistant" aria-hidden="true">
+      <div class="bb-chat-head">
+        <div class="bb-chat-avatar"><i class="bi bi-cup-hot-fill" aria-hidden="true"></i></div>
+        <div class="bb-chat-meta">
+          <strong>Zoe from Bakerz Bite</strong>
+          <span>Demo assistant &middot; canned replies only</span>
+        </div>
+        <button class="bb-chat-close" id="bbChatClose" type="button" aria-label="Close chat"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+      </div>
+      <div class="bb-chat-log" id="bbChatLog" role="log" aria-live="polite"></div>
+      <div class="bb-chat-chips" id="bbChatChips"></div>
+      <form class="bb-chat-form" id="bbChatForm" autocomplete="off">
+        <label class="visually-hidden" for="bbChatInput">Type your message</label>
+        <input class="bb-chat-input" id="bbChatInput" type="text" maxlength="200" placeholder="Ask about menu, offers, delivery&hellip;" />
+        <button class="bb-chat-send" type="submit" aria-label="Send message"><i class="bi bi-send-fill" aria-hidden="true"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade bb-modal" id="productModal" tabindex="-1" aria-labelledby="productModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="productModalTitle">Product Details</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <img src="assets/images/placeholder.svg" alt="" class="product-modal-img" id="pmImage" data-fallback="assets/images/placeholder.svg" />
+              <div class="pm-badges" id="pmBadges"></div>
+            </div>
+            <div class="col-md-6">
+              <p class="pm-category" id="pmCategory"></p>
+              <h3 class="pm-name" id="pmName"></h3>
+              <div class="pm-rating" id="pmRating"></div>
+              <p class="pm-price" id="pmPrice"></p>
+              <p class="pm-desc" id="pmDesc"></p>
+              <div class="pm-detail"><strong>Ingredients</strong><p id="pmIngredients"></p></div>
+              <div class="pm-detail"><strong>Allergens</strong><p id="pmAllergens"></p></div>
+              <div class="pm-detail"><strong>Availability</strong><p id="pmAvailability"></p></div>
+              <div class="pm-actions">
+                <div class="qty-selector" role="group" aria-label="Quantity selector">
+                  <button type="button" class="qty-btn" id="pmQtyMinus" aria-label="Decrease quantity"><i class="bi bi-dash" aria-hidden="true"></i></button>
+                  <input type="number" id="pmQty" value="1" min="1" max="99" aria-label="Quantity" />
+                  <button type="button" class="qty-btn" id="pmQtyPlus" aria-label="Increase quantity"><i class="bi bi-plus" aria-hidden="true"></i></button>
+                </div>
+                <button type="button" class="btn bb-btn-primary flex-grow-1" id="pmAddToCart"><i class="bi bi-bag-plus" aria-hidden="true"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bb-modal gallery-modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalCaption" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h6" id="galleryModalCaption">Gallery</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="assets/images/placeholder.svg" alt="" id="galleryModalImg" class="gallery-modal-img" data-fallback="assets/images/placeholder.svg" />
+          <p class="gallery-modal-caption" id="galleryModalText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bb-modal" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="checkoutTitle">Checkout Summary</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="checkoutBody"></div>
+        <div class="modal-footer">
+          <p class="cart-note text-start mb-0 me-auto">Demonstration only. Connect a backend or order service to accept real orders.</p>
+          <button type="button" class="btn bb-btn-outline" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bb-modal" id="orderModal" tabindex="-1" aria-labelledby="orderModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalTitle"><i class="bi bi-bag-check" aria-hidden="true"></i> Place Order</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="orderFormWrap">
+            <div class="order-offer-banner">
+              <img src="assets/images/placeholder.svg" alt="" id="orderOfferImg" data-fallback="assets/images/placeholder.svg" />
+              <div>
+                <span class="order-offer-badge" id="orderOfferBadge"></span>
+                <h3 class="order-offer-title" id="orderOfferTitle2"></h3>
+                <p class="order-offer-price" id="orderOfferPrice"></p>
+              </div>
+            </div>
+            <form id="orderForm" novalidate>
+              <input type="hidden" id="odOffer" />
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="odName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="odName" name="odName" autocomplete="name" />
+                  <div class="invalid-feedback-custom" data-error-for="odName"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="odPhone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="odPhone" name="odPhone" autocomplete="tel" />
+                  <div class="invalid-feedback-custom" data-error-for="odPhone"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="odEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="odEmail" name="odEmail" autocomplete="email" />
+                  <div class="invalid-feedback-custom" data-error-for="odEmail"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="odQty" class="form-label">Quantity <span class="text-danger">*</span></label>
+                  <div class="qty-selector" role="group" aria-label="Quantity selector">
+                    <button type="button" class="qty-btn" id="odQtyMinus" aria-label="Decrease quantity"><i class="bi bi-dash" aria-hidden="true"></i></button>
+                    <input type="number" id="odQty" name="odQty" value="1" min="1" max="99" aria-label="Quantity" />
+                    <button type="button" class="qty-btn" id="odQtyPlus" aria-label="Increase quantity"><i class="bi bi-plus" aria-hidden="true"></i></button>
+                  </div>
+                  <div class="invalid-feedback-custom" data-error-for="odQty"></div>
+                </div>
+                <div class="col-12">
+                  <label for="odAddress" class="form-label">Delivery Address <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="odAddress" name="odAddress" rows="2" autocomplete="street-address"></textarea>
+                  <div class="invalid-feedback-custom" data-error-for="odAddress"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="odPayment" class="form-label">Payment Method</label>
+                  <select class="form-select" id="odPayment" name="odPayment">
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                  </select>
+                </div>
+                <div class="col-md-6 d-flex align-items-end">
+                  <div class="order-live-total w-100">
+                    <span class="order-live-label">Estimated Total</span>
+                    <span class="order-live-value" id="orderLiveTotal">PKR 0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="form-note mt-3 mb-0">Demonstration only - confirming generates a sample receipt in your browser. No payment is taken and nothing is sent.</p>
+              <button type="submit" class="btn bb-btn-primary w-100 mt-3"><i class="bi bi-check2-circle" aria-hidden="true"></i> Confirm Order</button>
+            </form>
+          </div>
+
+          <div id="orderReceiptWrap" class="d-none">
+            <div class="order-receipt" id="orderReceipt"></div>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <button type="button" class="btn bb-btn-primary" id="orderPrintBtn"><i class="bi bi-printer" aria-hidden="true"></i> Print Receipt</button>
+              <button type="button" class="btn bb-btn-outline" id="orderNewBtn">Place Another Order</button>
+              <button type="button" class="btn bb-btn-outline" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer" style="z-index: 1200;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/products.js?v=27"></script>
+<script src="js/script.js?v=27"></script>
+</body>
+</html>

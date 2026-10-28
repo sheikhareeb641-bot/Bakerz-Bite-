@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450" role="img" aria-label="Image unavailable">
+  <rect width="600" height="450" fill="#F4E7D6"/>
+  <g fill="none" stroke="#C49A5A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="300" cy="185" r="46"/>
+    <path d="M258 175c8-30 30-48 42-48s34 18 42 48"/>
+    <path d="M262 205h76l-9 60a12 12 0 0 1-12 10h-34a12 12 0 0 1-12-10z"/>
+  </g>
+  <text x="300" y="330" text-anchor="middle" font-family="'Poppins', Arial, sans-serif" font-size="22" fill="#A87F3F">Bakerz Bite</text>
+  <text x="300" y="360" text-anchor="middle" font-family="'Poppins', Arial, sans-serif" font-size="15" fill="#B79A72">Image coming soon</text>
+</svg>
